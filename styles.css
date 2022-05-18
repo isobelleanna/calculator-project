@@ -134,9 +134,18 @@ button {
   color: #f5f5fd;
   font-size: 20px;
 }
+.button--operation {
+  background-image: linear-gradient(-20deg, #214644 0%, #537895 100%);
+}
 
 * {
   font-family: "Radio Canada", sans-serif;
+}
+
+.container {
+  padding-left: 2vh;
+  padding-right: 2vh;
+  background-color: #f5f5fd;
 }
 
 .calculation {
@@ -145,6 +154,7 @@ button {
   align-items: center;
   padding-left: 2vh;
   padding-right: 2vh;
+  padding-right: 4vh;
   background-color: #f5f5fd;
 }
 .calculation__h2 {
@@ -158,6 +168,9 @@ button {
   padding-left: 2vh;
   padding-right: 2vh;
   background-color: #f5f5fd;
+  margin: 3vh;
+  box-shadow: inset 3px 4px 10px #537895;
+  border-radius: 5px;
 }
 .result__h2 {
   color: rgb(22, 22, 22);

@@ -8,5 +8,8 @@
     background-image: $primary-gradient;
     color: $primary-colour;
     font-size: $mobile-font-size-buttons;
+    &--operation {
+        background-image: $secondary-gradient;
+    }
 
 }
