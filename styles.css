@@ -23,7 +23,7 @@ button {
 .calculation {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   padding-left: 2vh;
   padding-right: 2vh;
   padding-right: 4vh;
@@ -31,6 +31,8 @@ button {
 }
 .calculation__h2 {
   color: rgb(22, 22, 22);
+  font-weight: 100;
+  font-size: 15px;
 }
 
 .result {
@@ -173,5 +175,5 @@ button {
   font-size: 20px;
 }
 .button--operation {
-  background-image: linear-gradient(-20deg, #2a2135 0%, #537895 100%);
+  background-image: linear-gradient(to top, #321950 0%, #537895 100%);
 }/*# sourceMappingURL=styles.css.map */

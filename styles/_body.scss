@@ -11,12 +11,16 @@
 }
 
 .calculation {
-    @include flexEnd();
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-end;
     @include horizontalPadding();
     padding-right: 4vh;
     background-color: $primary-colour;
     &__h2 {
         color: $font-dark;
+        font-weight: 100;
+        font-size: 15px;
     }
 }
 
