@@ -1,0 +1,24 @@
+@use "variables" as *;
+@use "./mixins" as *;
+
+* {
+    font-family: $primary-font;
+}
+
+.calculation {
+    @include flexEnd();
+    @include horizontalPadding();
+    background-color: $primary-colour;
+    &__h2 {
+        color: $font-dark;
+    }
+}
+
+.result {
+    @include flexEnd();
+    @include horizontalPadding();
+    background-color: $primary-colour;
+    &__h2 {
+        color: $font-dark;
+    }
+}

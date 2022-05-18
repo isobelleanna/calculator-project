@@ -1,5 +1,12 @@
+@use "variables" as *;
+@use "./mixins" as *;
+
 .button {
     width: 100%;
     height: 20vh;
-    border: 1px solid green;
+    border: 1px solid $secondary-colour;
+    background-image: $primary-gradient;
+    color: $primary-colour;
+    font-size: $mobile-font-size-buttons;
+
 }

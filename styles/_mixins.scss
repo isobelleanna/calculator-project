@@ -1,0 +1,10 @@
+@mixin flexEnd() {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin horizontalPadding() {
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
