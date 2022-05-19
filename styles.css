@@ -55,7 +55,7 @@ button {
   grid-template-columns: repeat(4, 1fr);
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-  gap: 0px 0px;
+  gap: 1em;
   grid-auto-flow: row;
   grid-template-areas: "calculation calculation calculation calculation" "Result Result Result Result" "clear negative percentage divide" "seven eight nine multiply" "four five six subtract" "one two three plus" "zero zero decimal equal";
 }
@@ -144,13 +144,12 @@ button {
   grid-area: equal;
 }
 
-@media screen and (min-width: 454px) and (max-width: 768px) {
+@media screen and (min-width: 580px) and (max-width: 768px) {
   /* ipad screen */
   .container {
     grid-template-columns: repeat(6, 1fr);
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
-    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "calculation calculation calculation calculation calculation calculation" "Result Result Result Result Result Result" "clear clear clear clear negative percentage" "multiply multiply subtract plus decimal divide" "four five six seven eight nine" "one two three zero equal equal";
   }
@@ -161,18 +160,19 @@ button {
     grid-template-columns: repeat(8, 1fr);
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
-    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "calculation calculation calculation calculation calculation calculation calculation calculation" "Result Result Result Result Result Result Result Result" "clear negative percentage divide multiply subtract plus decimal" "two three four five six seven eight nine" "one zero equal equal equal equal equal equal";
   }
 }
 .button {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   border: 1px solid #fb8805;
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   color: #f5f5fd;
   font-size: 20px;
+  border-radius: 30px;
+  box-shadow: 3px 4px 10px #537895;
 }
 .button--operation {
   background-image: linear-gradient(to top, rgba(4, 41, 58, 0.5568627451) 0%, rgba(9, 101, 143, 0.3019607843) 100%);

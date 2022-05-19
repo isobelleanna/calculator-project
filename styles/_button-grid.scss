@@ -6,7 +6,7 @@
   grid-template-columns: repeat(4,1fr);
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-  gap: 0px 0px;
+  gap: 1em;
   grid-auto-flow: row;
   grid-template-areas:
     "calculation calculation calculation calculation"
@@ -60,13 +60,12 @@
 
 .equal { grid-area: equal; }
 
-@media screen and (min-width: 454px) and (max-width: 768px){
+@media screen and (min-width: 580px) and (max-width: 768px){
   /* ipad screen */
   .container {  
   grid-template-columns: repeat(6,1fr);
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-  gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "calculation calculation calculation calculation calculation calculation"
@@ -84,7 +83,6 @@
   grid-template-columns: repeat(8,1fr);
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-  gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "calculation calculation calculation calculation calculation calculation calculation calculation"
