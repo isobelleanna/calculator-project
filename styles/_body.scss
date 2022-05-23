@@ -15,7 +15,6 @@
     justify-content: flex-end;
     align-items:flex-end;
     @include horizontalPadding();
-    padding-right: 4vh;
     background-color: $primary-colour;
     &__h2 {
         color: $font-dark;
@@ -28,7 +27,6 @@
     @include flexEnd();
     @include horizontalPadding();
     background-color: $primary-colour;
-    margin: 3vh;
     box-shadow: inset 3px 4px 10px $tertiary-colour;
     border-radius: 5px;
     &__h2 {
