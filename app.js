@@ -10,35 +10,50 @@ const buttonDecimal = document.getElementById("button-decimal");
 const buttonPercentage = document.getElementById("button-percentage");
 const buttonNegative = document.getElementById("button-negative");
 
-
+let firstOperator = false;
+const numberToCalculate = [];
+const operatorsToCalculate = [];
 /// Onclick functions
 
 const onClicknumber = (event) => {
     calculationHeading.innerText += event.target.innerText;
+    resultHeading.innerText += event.target.innerText;
 };
 
 const onClickoperators = (event) => {
+    //if(calculationHeading.innerText)
+    const currentVal = resultHeading.innerText
+    numberToCalculate.push(currentVal)
+    operatorsToCalculate.push(event.target.innerHTML)
+    resultHeading.innerText = "";
+    console.log(numberToCalculate);
     calculationHeading.innerText += event.target.innerHTML;
-    //console.log(9);
+    if(numberToCalculate.length > 1) {
+        console.log(1);
+    }
+
 };
 
 const onClickClear = (event) => {
-    resultHeading.innerText = "0";
+    resultHeading.innerText = "";
     calculationHeading.innerText = "";
-    //console.log(0);
+    while(numberToCalculate.length > 0) {
+         numberToCalculate.pop();
+        }
+    console.log(numberToCalculate);
 };
 
 const onClickDecimal = (event) => {
-    const lastChar = calculationHeading.innerText.slice(-1);
-    //let number = parseInt(calculationHeading.innerText);
-    if(lastChar != "." ){
+    //const lastChar = calculationHeading.innerText.slice(-1);
+    if(!resultHeading.innerHTML.includes(".")){
         calculationHeading.innerText += event.target.innerText;
+        resultHeading.innerText += event.target.innerText;
     }
-    //console.log(0);
 };
 
 const onClickEqualsCalculate = (event) => {
     //console.log(calculationHeading.innerText);
+
      if(calculationHeading.innerText.includes("+")){
         splitStringPlus();
     }else if (calculationHeading.innerText.includes("-")){
@@ -55,11 +70,9 @@ const onClickPercentage = (event) => {
     calculationHeading.innerText = number /100;
 };
 
-// 
 const onClickNegative = (event) => {
     let number = parseInt(calculationHeading.innerText);
     calculationHeading.innerText = number - (number * 2);
-    
 };
 // 
 
@@ -85,6 +98,8 @@ const splitStringPlus = (string) => {
         return runningTotal + currentVal
     })
     resultHeading.innerText = sumOfArray;
+    calculationHeading.innerText = "";
+
 }
 
 const splitStringSubtract = (string) => {
@@ -92,6 +107,7 @@ const splitStringSubtract = (string) => {
     const subtractArrayNumbers = subtractArray.map(string => Number(string));
     let total = subtractArrayNumbers[0] - subtractArrayNumbers[1];
     resultHeading.innerText = total;
+    calculationHeading.innerText = "";
 }
 
 const splitStringMultiply = (string) => {
@@ -99,6 +115,7 @@ const splitStringMultiply = (string) => {
     const subtractArrayNumbers = subtractArray.map(string => Number(string));
     let total = subtractArrayNumbers[0] * subtractArrayNumbers[1];
     resultHeading.innerText = total;
+    calculationHeading.innerText = "";
 }
 
 const splitStringDivide = (string) => {
@@ -107,5 +124,6 @@ const splitStringDivide = (string) => {
     let total = subtractArrayNumbers[0] / subtractArrayNumbers[1];
     resultHeading.innerText = total;
 }
+
 
 
