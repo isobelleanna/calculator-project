@@ -35,7 +35,6 @@ const onClickoperators = (event) => {
     if(numberToCalculate.length > 1) {
         console.log(1);
     }
-
 };
 
 const onClickClear = (event) => {
@@ -106,7 +105,7 @@ const splitStringPlus = (string) => {
         return runningTotal + currentVal
     })
     resultHeading.innerText = sumOfArray;
-    calculationHeading.innerText = "";
+    calculationHeading.innerText = sumOfArray;
 
 }
 
@@ -115,7 +114,7 @@ const splitStringSubtract = (string) => {
     const subtractArrayNumbers = subtractArray.map(string => Number(string));
     let total = subtractArrayNumbers[0] - subtractArrayNumbers[1];
     resultHeading.innerText = total;
-    calculationHeading.innerText = "";
+    calculationHeading.innerText = total;
 }
 
 const splitStringMultiply = (string) => {
@@ -123,7 +122,7 @@ const splitStringMultiply = (string) => {
     const subtractArrayNumbers = subtractArray.map(string => Number(string));
     let total = subtractArrayNumbers[0] * subtractArrayNumbers[1];
     resultHeading.innerText = total;
-    calculationHeading.innerText = "";
+    calculationHeading.innerText = total;
 }
 
 const splitStringDivide = (string) => {
@@ -131,6 +130,7 @@ const splitStringDivide = (string) => {
     const subtractArrayNumbers = subtractArray.map(string => Number(string));
     let total = subtractArrayNumbers[0] / subtractArrayNumbers[1];
     resultHeading.innerText = total;
+    calculationHeading.innerText = total;
 }
 
 
