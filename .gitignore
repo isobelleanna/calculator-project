@@ -1,0 +1,6 @@
+node_modules
+.vscode
+cyrpess/*
+!cypress/integration
+cypress/integration/*
+!cypress/integration/calculator.spec.js

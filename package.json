@@ -1,0 +1,22 @@
+{
+  "name": "calculator-project",
+  "version": "1.0.0",
+  "description": "Project to create a working calculator using html, scss and javascript. The requirement are:",
+  "main": "app.js",
+  "scripts": {
+    "test:cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isobelleanna/calculator-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isobelleanna/calculator-project/issues"
+  },
+  "homepage": "https://github.com/isobelleanna/calculator-project#readme",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
